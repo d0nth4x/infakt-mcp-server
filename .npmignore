@@ -1,0 +1,60 @@
+# Source files (only publish compiled dist/)
+src/
+*.ts
+!*.d.ts
+tsconfig.json
+
+# Development files
+.env
+.env.*
+!.env.example
+
+# Documentation (keep README, LICENSE, CHANGELOG in package.json files)
+ARCHITECTURE.md
+UPGRADE_SUMMARY.md
+PROJECT_SUMMARY.md
+CONTRIBUTING.md
+QUICKSTART.md
+QUICKSTART.pl.md
+claude_desktop_config.example.json
+
+# Postman collection
+*.postman_collection.json
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+test/
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+.nyc_output/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+circle.yml
+
+# Misc
+*.log
+.cache/
+tmp/
+temp/

@@ -16,16 +16,18 @@ import {
   validatePaginationParams,
   sanitizeParams,
 } from "../validation.js";
+import { convertAllMonetaryFields } from "../currency.js";
 
 /**
  * Creates a JSON text response
  */
 function createJsonResponse(data: unknown): ToolResponse {
+  const convertedData = convertAllMonetaryFields(data);
   return {
     content: [
       {
         type: "text",
-        text: JSON.stringify(data, null, 2),
+        text: JSON.stringify(convertedData, null, 2),
       },
     ],
   };

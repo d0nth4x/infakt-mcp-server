@@ -20,6 +20,7 @@ import {
   sanitizeParams,
   validatePositiveNumber,
 } from "../validation.js";
+import { convertAllMonetaryFields } from "../currency.js";
 
 const BUSINESS_ACTIVITY_KINDS = [
   "company",
@@ -31,11 +32,12 @@ const BUSINESS_ACTIVITY_KINDS = [
  * Creates a JSON text response
  */
 function createJsonResponse(data: unknown): ToolResponse {
+  const convertedData = convertAllMonetaryFields(data);
   return {
     content: [
       {
         type: "text",
-        text: JSON.stringify(data, null, 2),
+        text: JSON.stringify(convertedData, null, 2),
       },
     ],
   };

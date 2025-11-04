@@ -29,6 +29,7 @@ import {
   validateEnum,
   sanitizeParams,
 } from "../validation.js";
+import { convertAllMonetaryFields } from "../currency.js";
 
 const PAYMENT_METHODS = [
   "cash",
@@ -62,14 +63,18 @@ const DOCUMENT_TYPES = [
 const LOCALES = ["pl", "en", "pe"] as const;
 
 /**
- * Creates a JSON text response
+ * Creates a JSON text response with automatic currency conversion
+ * Converts all monetary values from grosze (API format) to PLN (user-friendly)
  */
 function createJsonResponse(data: unknown): ToolResponse {
+  // Convert all monetary fields from grosze to PLN
+  const convertedData = convertAllMonetaryFields(data);
+
   return {
     content: [
       {
         type: "text",
-        text: JSON.stringify(data, null, 2),
+        text: JSON.stringify(convertedData, null, 2),
       },
     ],
   };

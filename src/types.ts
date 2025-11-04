@@ -3,6 +3,11 @@
  *
  * This file contains all type definitions for the inFakt API integration,
  * including request/response types, domain models, and utility types.
+ *
+ * IMPORTANT: inFakt API returns all monetary values in GROSZE (Polish pennies).
+ * 100 grosze = 1 PLN
+ *
+ * Our MCP server automatically converts these values to PLN (złotych) in responses.
  */
 
 import type { ApiClient } from "./api-client.js";
