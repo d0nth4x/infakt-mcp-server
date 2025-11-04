@@ -1,0 +1,226 @@
+# ========================================
+# Node.js Dependencies
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency lock files (optional - uncomment to ignore)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ========================================
+# Build Output
+# ========================================
+dist/
+dist-ssr/
+build/
+out/
+*.tsbuildinfo
+*.tsbuildinfo.*
+lib/
+lib-esm/
+lib-cjs/
+
+# ========================================
+# Environment Variables & Secrets
+# ========================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+*.pem
+*.key
+*.crt
+*.p12
+secrets.json
+credentials.json
+
+# ========================================
+# IDE & Editor Files
+# ========================================
+
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json.example
+!.vscode/tasks.json
+*.code-workspace
+
+# Claude Code
+.claude/
+
+# JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+*.swp
+*.swo
+*~
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+.projectile
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ========================================
+# Operating System Files
+# ========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ========================================
+# Logs & Runtime Files
+# ========================================
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+
+# ========================================
+# Testing & Coverage
+# ========================================
+coverage/
+*.lcov
+.nyc_output/
+.grunt/
+.lock-wscript
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port/
+.vscode-test/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+junit.xml
+test-results/
+playwright-report/
+
+# ========================================
+# MCP Specific
+# ========================================
+# MCP Inspector files
+.mcp-inspector/
+
+# Test databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================================
+# Temporary & Cache Files
+# ========================================
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+.npm/
+.eslintcache
+.stylelintcache
+*.tgz
+.yarn-integrity
+
+# ========================================
+# Misc Development Files
+# ========================================
+*.orig
+*.rej
+*.bak
+*.swp
+*.swo
+*~.nib
+local.properties
+.loadpath
+.externalToolBuilders/
+.cproject
+.buildpath
+.target
+.sts4-cache/
+typings/
+
+# ========================================
+# Documentation Build (if using tools like TypeDoc)
+# ========================================
+docs-dist/
+api-docs/
+
+# ========================================
+# Optional: Keep example files
+# ========================================
+# Uncomment to not ignore example files
+# !*.example
+# !*.sample

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "infakt": {
+      "command": "node",
+      "args": [
+        "/Users/YOUR_USERNAME/path/to/infakt-mcp/dist/index.js"
+      ],
+      "env": {
+        "INFAKT_API_KEY": "your_infakt_api_key_here",
+        "INFAKT_USE_SANDBOX": "false"
+      }
+    }
+  }
+}
